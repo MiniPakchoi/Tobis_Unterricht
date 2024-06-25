@@ -1,9 +1,8 @@
-﻿//Menü anzeigen mit Optionen
+﻿// Menü anzeigen mit Optionen
 string user = Environment.UserName;
 Console.WriteLine($"Willkommen {user} bei Dontforget");
 Console.WriteLine("Was möchtest du tun?");
-Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen");
-
+Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen"); 
 
 do
 {
@@ -21,9 +20,5 @@ do
             //Liste der Todos anzeigen
             Console.WriteLine("Todo anzeigen");
             break;
-        default:
-            Console.WriteLine($"{user} da ist was schief gelaufen!");
-            break;
     }
-}
-while (false);
+} while (false);
