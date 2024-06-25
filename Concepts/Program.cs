@@ -51,3 +51,12 @@ string Get_Greeting()
 {
     return "Herzlichen Willkommen!";
 }
+
+//Collections-Basics
+//Array 
+string[] namen = new string[5];
+namen[0] = "Jade";
+
+//Array ist eine Liste an Werten
+//Eine kontinuirliche Speicherregion, für mehrere Daten eines gewissen Types
+int[] nums = new int[5];

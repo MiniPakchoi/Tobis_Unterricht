@@ -1,10 +1,29 @@
-﻿namespace Dontforget
+﻿//Menü anzeigen mit Optionen
+string user = Environment.UserName;
+Console.WriteLine($"Willkommen {user} bei Dontforget");
+Console.WriteLine("Was möchtest du tun?");
+Console.WriteLine("\t1. Neues Todo erstellen\n\t2. Todos anzeigen");
+
+
+do
 {
-    internal class Program
+    var input = Console.ReadLine();
+
+    switch (input)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
+        case "1":
+            //Option 1:Todo erstellen
+            //Userinput nehmen
+            Console.WriteLine("Todo erstellen");
+            var todo = Console.ReadLine();
+            break;
+        case "2":
+            //Liste der Todos anzeigen
+            Console.WriteLine("Todo anzeigen");
+            break;
+        default:
+            Console.WriteLine($"{user} da ist was schief gelaufen!");
+            break;
     }
 }
+while (false);
