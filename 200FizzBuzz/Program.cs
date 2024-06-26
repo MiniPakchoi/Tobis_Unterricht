@@ -1,7 +1,7 @@
 ﻿string userName = Environment.UserName;
 Console.WriteLine($"Hallo {userName} wir spielen eine Runde FizzBuzz");
 int[] zahlen = new int[100];
-for (int i = 1; i < zahlen.Length; i++)
+for (int i = 0 ; i < zahlen.Length; i++)
 {
     zahlen[i] = i;
 }
