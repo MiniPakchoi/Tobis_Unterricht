@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "102Aufgabe_Promillerechner"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "103Taschenrechner", "..\01 HelloWorld\103Taschenrechner\103Taschenrechner.csproj", "{0F4C9F0B-5639-4D64-BC62-20BBB164012C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "200FizzBuzz", "200FizzBuzz\200FizzBuzz.csproj", "{1DA669C3-1CD1-4AB7-BA74-4E61A56660A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "200FizzBuzz", "200FizzBuzz\200FizzBuzz.csproj", "{1DA669C3-1CD1-4AB7-BA74-4E61A56660A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dontforget_2", "Dontforget_2\Dontforget_2.csproj", "{904CF4E6-0516-48B8-AD56-2517C956BD3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{1DA669C3-1CD1-4AB7-BA74-4E61A56660A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DA669C3-1CD1-4AB7-BA74-4E61A56660A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DA669C3-1CD1-4AB7-BA74-4E61A56660A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904CF4E6-0516-48B8-AD56-2517C956BD3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904CF4E6-0516-48B8-AD56-2517C956BD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904CF4E6-0516-48B8-AD56-2517C956BD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904CF4E6-0516-48B8-AD56-2517C956BD3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
