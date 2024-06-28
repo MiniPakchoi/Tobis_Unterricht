@@ -25,6 +25,15 @@ int getIndex(string prompt)  //Funktionssignatur
 }
 
 //Erstelle eine Funktion , für die Ausgabelogik der Liste. Extrahieren in eine eigene Funktion
+
+int dontforgetList()
+{
+    for (int i = 0; i < dontforget.Count; i++)
+    {
+        Console.WriteLine($"\t{i + 1}. {dontforget[i]}");
+    }
+}
+
 List<string> dontforgets = new ();
 
 dontforgets.Add("Wäsche waschen");
