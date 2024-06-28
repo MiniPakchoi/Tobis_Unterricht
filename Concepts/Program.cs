@@ -13,16 +13,23 @@ else
     Console.WriteLine(index);
 }
 
-int getIndex()
+//Beispiel Funktion/Methode mit Parameter
+//Eine Fuktion kann keinen, einen oder belieb viele Parameter bekommen
+//Die parameter k önnen die Funktionsweise einer Methode dynamisch ändern
+int getIndex(string prompt)  //Funktionssignatur
 {
-    Console.WriteLine("Gebe die Aufgabe ein, die du bearbeiten willst:");
+    Console.WriteLine(prompt);
     var input = Console.ReadLine();
     var number = int.Parse(input);
     return number;
 }
 
-string[] my_dontforgets = ["Wäsche waschen", "Bügeln"];
+//Erstelle eine Funktion , für die Ausgabelogik der Liste. Extrahieren in eine eigene Funktion
+List<string> dontforgets = new ();
 
-int myIndex = getIndex();
-//int mySecondIndex = getIndex();
-//Console.WriteLine(my_dontforgets[getIndex()]);
+dontforgets.Add("Wäsche waschen");
+dontforgets.Add("Bügeln");
+
+int myIndex = getIndex("Gebe die Aufgabe ein, die du bearbeiten willst:");
+//int mySecondIndex = getIndex("....einen Text eingeben"); // kann beliebt oft aufgerufen werden
+Console.WriteLine(dontforgets[index]);
