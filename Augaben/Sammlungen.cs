@@ -29,15 +29,15 @@ namespace Aufgaben
             return -1;
         }
 
-        internal static int TempList(List<int> temperaturen, int schwellenwert)
+        internal static int TempList(List<double> temperaturen, int schwellenwert)
         {
 
             for (int i = 0; i < temperaturen.Count; i++)
             {
                 if (temperaturen[i] < schwellenwert)
                 {
-                    return i.ToArray(ergebnisliste);
-                    
+                    ergebnisliste.Add(temperaturen[i]);
+                    return ergebnisliste;  
                 }
             }
 

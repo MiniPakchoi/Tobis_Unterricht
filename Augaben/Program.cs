@@ -13,10 +13,10 @@
 
 using Aufgaben;
 
-List<int> temperaturen = new() { 20, 22, 19, 24, 21, 18, 25 };
+List<double> temperaturen = new() { 20, 22, 19, 24, 21, 18, 25 };
 int schwellenwert = 21;
 
 List<int> ergebnisliste = new();
 
-var index = Sammlungen.TempList(temperaturen, schwellenwert);
+int index = Sammlungen.TempList(temperaturen, schwellenwert);
 Console.WriteLine(index);
