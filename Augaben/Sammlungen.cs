@@ -9,39 +9,49 @@ namespace Aufgaben
 {
     internal class Sammlungen
     {
+        //FindIndex Optimized
+        internal static int FindIndexOpimized()
+        {
+            return 0;
+        }
         /// <summary>
         /// Eine Funktion welche eine Smmlung und ein gesuchtes Element übergeben bekommt,
         /// und den entsprechenden Index des Elements im Array zurückgibt.
         /// </summary>
-        //internal static int FindIndex(List<int> numbers, int query)
-        //{
-        //    //iterieren (durchzählen) durch numbers
-        //    //wenn: numbers[i] == query
-        //    //return i;
-        //    for (int i = 0; i < numbers.Count; i++)
-        //    {
-        //        if (numbers[i] == query)
-        //        {
-        //            return i;
-        //        }
-        //    }
-        //    //wenn query nicht gefunden, dann return -1
-        //    return -1;
-        //}
-
-        internal static List<int> TempList(List<int> temperaturen, int schwellenwert)
+        internal static int FindIndex(List<int> numbers, int query)
         {
-            List<int> ergebnisListe = new List<int>();
-            for (int i = 0; i < temperaturen.Count; i++)
+            //iterieren (durchzählen) durch numbers
+            //wenn: numbers[i] == query
+            //return i;
+            for (int i = 0; i < numbers.Count; i++)
             {
-                if (temperaturen[i] > schwellenwert)
+                if (numbers[i] == query)
                 {
-                    ergebnisListe.Add(i); 
+                    return i;
                 }
             }
-            return ergebnisListe;
+            //wenn query nicht gefunden, dann return -1
+            return -1;
+            }
+        internal static int FindIndexAlt(List<int> numbers, int query)
+        {
+            // iterieren (durchzählen) durch numbers
+            // wenn: numbers[i] == query
+            //   return i;
+            for (int i = numbers.Count - 1; i > 0; i--)
+            {
+                if (numbers[i] == query) return i;
+            }
+            // wenn query nicht gefunden, return -1
+            return -1;
         }
-
-
+        internal static List<int> GenerateNumbers(int amount)
+        {
+            List<int> numbers = new();
+            for (int i = 0; i < amount; i++)
+                numbers.Add(i);
+            return numbers;
+        }
     }
+   
 }

@@ -95,5 +95,6 @@ namespace Concepts
                 Console.WriteLine(hamster[i]);
             }
         }
+   
     }
 }
