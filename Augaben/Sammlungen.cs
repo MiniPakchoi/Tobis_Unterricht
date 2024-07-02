@@ -13,35 +13,33 @@ namespace Aufgaben
         /// Eine Funktion welche eine Smmlung und ein gesuchtes Element übergeben bekommt,
         /// und den entsprechenden Index des Elements im Array zurückgibt.
         /// </summary>
-        internal static int FindIndex(List<int> numbers, int query)
-        {
-            //iterieren (durchzählen) durch numbers
-            //wenn: numbers[i] == query
-            //return i;
-            for (int i = 0; i < numbers.Count; i++)
-            {
-                if (numbers[i] == query)
-                {
-                    return i;
-                }
-            }
-            //wenn query nicht gefunden, dann return -1
-            return -1;
-        }
+        //internal static int FindIndex(List<int> numbers, int query)
+        //{
+        //    //iterieren (durchzählen) durch numbers
+        //    //wenn: numbers[i] == query
+        //    //return i;
+        //    for (int i = 0; i < numbers.Count; i++)
+        //    {
+        //        if (numbers[i] == query)
+        //        {
+        //            return i;
+        //        }
+        //    }
+        //    //wenn query nicht gefunden, dann return -1
+        //    return -1;
+        //}
 
-        internal static int TempList(List<double> temperaturen, int schwellenwert)
+        internal static int TempList(List<int> temperaturen, int schwellenwert)
         {
-
+            List<int> ergebnisListe = new List<int>();
             for (int i = 0; i < temperaturen.Count; i++)
             {
-                if (temperaturen[i] < schwellenwert)
+                if (temperaturen[i] > schwellenwert)
                 {
-                    ergebnisliste.Add(temperaturen[i]);
-                    return ergebnisliste;  
+                    ergebnisListe.Add(i); 
                 }
             }
-
-            return -1;
+            return ergebnisListe;
         }
 
 
