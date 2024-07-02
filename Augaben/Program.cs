@@ -16,10 +16,10 @@ var manyNumbers = Sammlungen.GenerateNumbers(1_000_000_000);
 var manyNumbersQuery = 999_999_999;
 Console.WriteLine(manyNumbers.Count);
 var manyNumbersIndex = Sammlungen.FindIndexAlt(manyNumbers, manyNumbersQuery);
-Console.WriteLine($"FindIndex ManyNumbers; Sollte 999_999_999; Ist {manyNumbersIndex}");
+Console.WriteLine($"FindIndex ManyNumbers SLOW; Sollte 999_999_999; Ist {manyNumbersIndex}");
 
-
-
+var manyNumbersFastIndex = Sammlungen.FindIndexOpimized(manyNumbers, manyNumbersQuery);
+Console.WriteLine($"FindIndex ManyNumbers FAST; Sollte 999_999_999; Ist {manyNumbersFastIndex}");
 
 
 

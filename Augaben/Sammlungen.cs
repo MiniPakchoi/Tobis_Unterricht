@@ -10,9 +10,25 @@ namespace Aufgaben
     internal class Sammlungen
     {
         //FindIndex Optimized
-        internal static int FindIndexOpimized()
+        internal static int FindIndexOpimized(List<int>numbers, int query)
         {
-            return 0;
+            var low = 0;
+            var high = numbers.Count -1; //Der höchste Index
+            int mid = (high + low) / 2;
+            while (high != low)
+            {
+                mid = (high + low) / 2;
+                if (numbers[mid] == query) return mid;
+                else if (numbers[mid] < query)
+                {
+                    low = mid + 1;
+                }
+                else
+                {
+                    high = mid - 1; 
+                }
+            }
+            return -1;    
         }
         /// <summary>
         /// Eine Funktion welche eine Smmlung und ein gesuchtes Element übergeben bekommt,
