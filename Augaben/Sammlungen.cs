@@ -29,7 +29,7 @@ namespace Aufgaben
         //    return -1;
         //}
 
-        internal static int TempList(List<int> temperaturen, int schwellenwert)
+        internal static List<int> TempList(List<int> temperaturen, int schwellenwert)
         {
             List<int> ergebnisListe = new List<int>();
             for (int i = 0; i < temperaturen.Count; i++)
