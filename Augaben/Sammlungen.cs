@@ -182,5 +182,37 @@ namespace Aufgaben
             /// </summary>
 
         }
+
+        /// <summary>
+        /// Finde den niedrigsten Wert in einem Array arbiträrer Länge, und gebe diesen Zurück.
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns>Der niedrigste Wert, aus dem gegebenen Array</returns>
+        internal static int FindSmallestValue(int[] numberz)
+        {
+            return 0;
+        }
+        /// <summary>
+        /// Gebe eine neue Liste zurück, welche nur alle geraden Zahlen beinhaltet.
+        /// Input: [1,2,3,4,5,6]
+        /// Output: [2,4,6]
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns></returns>
+        internal static List<int> OnlyEven(List<int> numbers)
+        {
+            List<int> onlyEvenNumbers = new List<int>();
+            for (int i =0; i<numbers.Count; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    onlyEvenNumbers.Add(i);
+                }
+            }
+            
+            return onlyEvenNumbers;
+        }
+
+
     }
 }

@@ -23,7 +23,7 @@
 string userName = Environment.UserName;
 Console.WriteLine($"Hallo {userName} wir spielen eine Runde FizzBuzz");
 int[] zahlen = new int[101];
-for (int i = 1; i < zahlen.LongLength; i++)
+for (int i = 1; i < zahlen.Length; i++)
 {
     zahlen[i] = i;
    
