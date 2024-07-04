@@ -44,16 +44,19 @@ Console.WriteLine($"Average: {averageTemp}"); // sollte 21.285714285714285 sein
 // Aufgabe BaumBauer
 Sammlungen.BaumBauer();
 
+
 // Aufgabe Diamond Builder
 //Sammlungen.DiamondBuilder();
 
 // Aufgabe FindSmallestValue
+Console.WriteLine("Ab hier werden kleinste Zahlen gesucht!");
 int[] findSmallestValue = { 101, 45, 31, 13, 500, 61, 79, 88, 55, 99, 350, 700, 22, 35 };
 Array.Sort(findSmallestValue);
 int min = findSmallestValue[0];
-Console.WriteLine("\n + min");
+Console.WriteLine($"\n" + min);
 
 // Aufgabe Only Even
+
 List<int> onlyEvenNumber = new() { 1, 2, 3, 4, 5, 6 };
 List<int> onlyEvenNumbers = Sammlungen.OnlyEven(numbers);
 onlyEvenNumbers.ForEach(Console.WriteLine);

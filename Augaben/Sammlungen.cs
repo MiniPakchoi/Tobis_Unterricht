@@ -164,7 +164,7 @@ namespace Aufgaben
             {
                 Console.Write(" ");
             }
-            Console.Write("#");
+            Console.Write("#\n");
         }
         internal static void DiamondBuilder()
         {
@@ -190,6 +190,7 @@ namespace Aufgaben
         /// <returns>Der niedrigste Wert, aus dem gegebenen Array</returns>
         internal static int FindSmallestValue(int[] numberz)
         {
+            
             return 0;
         }
         /// <summary>
@@ -201,8 +202,9 @@ namespace Aufgaben
         /// <returns></returns>
         internal static List<int> OnlyEven(List<int> numbers)
         {
+            Console.WriteLine("Hier werden nur Zahlen gezeigt die gerade sind!");
             List<int> onlyEvenNumbers = new List<int>();
-            for (int i =0; i<numbers.Count; i++)
+            for (int i = 1; i<numbers.Count; i++)
             {
                 if (i % 2 == 0)
                 {
