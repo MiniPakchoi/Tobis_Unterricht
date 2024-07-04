@@ -46,17 +46,28 @@ Sammlungen.BaumBauer();
 
 
 // Aufgabe Diamond Builder
-//Sammlungen.DiamondBuilder();
+Sammlungen.DiamondBuilder();
 
 // Aufgabe FindSmallestValue
 Console.WriteLine("Ab hier werden kleinste Zahlen gesucht!");
 int[] findSmallestValue = { 101, 45, 31, 13, 500, 61, 79, 88, 55, 99, 350, 700, 22, 35 };
-Array.Sort(findSmallestValue);
-int min = findSmallestValue[0];
-Console.WriteLine($"\n" + min);
+var findSmallest = Sammlungen.FindSmallestValue(findSmallestValue);
+Console.WriteLine(findSmallest);
 
 // Aufgabe Only Even
-
+Console.WriteLine("Hier werden nur Zahlen gezeigt die gerade sind!");
 List<int> onlyEvenNumber = new() { 1, 2, 3, 4, 5, 6 };
 List<int> onlyEvenNumbers = Sammlungen.OnlyEven(numbers);
 onlyEvenNumbers.ForEach(Console.WriteLine);
+
+//Aufgabe Printbackwards
+Console.WriteLine("\nHier herrscht verkehrte Welt!");
+string text = "test";
+string text2 = "Das Wetter ist zum davonlaufen!";
+StringAufgaben.Printbackwards(text2);
+
+//Aufgabe CountWords
+Console.WriteLine("\nAb hier werden Wörter gezählt!");
+string blubb = "Hier könnte Ihre Werbung stehen oder auch nicht!";
+int counts = StringAufgaben.CountWords(blubb);
+Console.WriteLine(counts);

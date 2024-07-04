@@ -166,7 +166,7 @@ namespace Aufgaben
             }
             Console.Write("#\n");
         }
-        internal static void DiamondBuilder()
+        internal static void DiamondBuilder(int hoehe = 5)
         {
             /// <summary>
             /// Eine Funktion, welche einen Diamanten in der Konsole druckt.
@@ -180,7 +180,8 @@ namespace Aufgaben
             ///   ###
             ///    #
             /// </summary>
-
+            Console.WriteLine("Ab hier werden Diamanten gebaut!");
+            
         }
 
         /// <summary>
@@ -190,8 +191,15 @@ namespace Aufgaben
         /// <returns>Der niedrigste Wert, aus dem gegebenen Array</returns>
         internal static int FindSmallestValue(int[] numberz)
         {
-            
-            return 0;
+            int min = numberz[0];
+            foreach (int number in numberz)
+            {
+                if (number < min)
+                {
+                    min = number;
+                }
+            }
+            return min;
         }
         /// <summary>
         /// Gebe eine neue Liste zurück, welche nur alle geraden Zahlen beinhaltet.
@@ -202,7 +210,6 @@ namespace Aufgaben
         /// <returns></returns>
         internal static List<int> OnlyEven(List<int> numbers)
         {
-            Console.WriteLine("Hier werden nur Zahlen gezeigt die gerade sind!");
             List<int> onlyEvenNumbers = new List<int>();
             for (int i = 1; i<numbers.Count; i++)
             {
@@ -211,10 +218,31 @@ namespace Aufgaben
                     onlyEvenNumbers.Add(i);
                 }
             }
-            
             return onlyEvenNumbers;
         }
-
-
+        /// <summary>
+        /// Eine Funktion, welche true zurückgibt, wenn ein (oder mehrere) Werte doppelt vorkommen.
+        /// Examples:
+        /// <list type="bullet">
+        /// <item>
+        /// Input: [0,1,2,3]
+        /// Output: False
+        /// </item>
+        /// <item>
+        /// Input: [0,1,2,2,3,4,5]
+        /// Output: True
+        /// </item>
+        /// <item>
+        /// Input: [0,1,1,2,3,4,4]
+        /// Output: True
+        /// </item>
+        /// </list>
+        /// </summary>
+        /// <param name="numbers"></param>
+        /// <returns></returns>
+        internal static bool ContainsDuplicates(int[] numbers) 
+        { 
+            return false; 
+        }
     }
 }
