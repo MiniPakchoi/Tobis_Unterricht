@@ -66,11 +66,19 @@ namespace Aufgaben
         /// <returns>Die Anzahl an Buchstaben im letzten Wort als Int</returns>
         /// </summary>
         /// 
-        internal static int CountCharsOfLastWordInText(string satz)
+        internal static int CountCharsOfLastWordInText(string lastWords)
         {
-            
-             
-            return 0;
+            string lastWord = "Das wird Legendär!";
+            int cC = 0;
+            for (int i = lastWord.Length - 1; i >= 0; i--)
+            {
+                if (lastWord[i] == ' ')
+                {
+                    break;
+                }
+                cC++;
+            }
+            return cC;
         }
         /// <summary>
         /// Eine Funktion, welche einen beliebigen Text als Input bekommt und in der Konsole die Anzahl an Vokalen und Konsonanten anzeigt.
@@ -86,6 +94,11 @@ namespace Aufgaben
         /// <param name="text"></param>
         internal static void PrintConsonantAndVowels(string text) 
         {
+            char[] vowelList = { 'a', 'e', 'i', 'o', 'u', 'ä', 'ö', 'ü' };
+            char[] consonantsList = { 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'};
+            int vowelCount = 0;
+            int consonantCount = 0;
+            
 
         }
     }

@@ -242,6 +242,8 @@ namespace Aufgaben
         /// <returns></returns>
         internal static bool ContainsDuplicates(int[] numbers) 
         { 
+            
+            
             return false; 
         }
     }
