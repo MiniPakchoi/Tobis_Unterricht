@@ -18,7 +18,7 @@ namespace Aufgaben
         /// </summary>
         /// <param name="text"></param>
         internal static void Printbackwards(string zeichenkette)
-        { 
+        {
             int j = zeichenkette.Length - 1;
             while (j >= 0)
             {
@@ -38,7 +38,7 @@ namespace Aufgaben
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        internal static int CountWords (string satz) 
+        internal static int CountWords(string satz)
         {
             int wordCount = 1;
             for (int i = 0; i < satz.Length; i++)
@@ -48,7 +48,7 @@ namespace Aufgaben
                     wordCount++;
                 }
             }
-            return wordCount; 
+            return wordCount;
         }
         /// <summary>
         /// Eine Funktion, welche die Anzahl an Buchstaben des letzten Wortes des Textes zurückgibt.
@@ -92,13 +92,9 @@ namespace Aufgaben
         /// HINT: Sind Leerzeichen Vokale oder Konsonanten?
         /// </summary>
         /// <param name="text"></param>
-        internal static void PrintConsonantAndVowels(string text) 
+        internal static void PrintConsonantAndVowels(string text)
         {
-            char[] vowelList = { 'a', 'e', 'i', 'o', 'u', 'ä', 'ö', 'ü' };
-            char[] consonantsList = { 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'};
-            int vowelCount = 0;
-            int consonantCount = 0;
-            
+
 
         }
     }
