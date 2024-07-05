@@ -94,8 +94,49 @@ namespace Aufgaben
         /// <param name="text"></param>
         internal static void PrintConsonantAndVowels(string text)
         {
+            int vowelCount = 0;
+            int consonantCount = 0;
+            string textLower = text.ToLower();
+            for (int i = 0; i < textLower.Length; i++)
+            {
+                char x = textLower[i];
+                switch (x)
+                {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                        vowelCount++;
+                        break;
+                    case 'b':
+                    case 'c':
+                    case 'd':
+                    case 'f':
+                    case 'g':
+                    case 'h':
+                    case 'j':
+                    case 'k':
+                    case 'l':
+                    case 'm':
+                    case 'n':
+                    case 'p':
+                    case 'q':
+                    case 'r':
+                    case 's':
+                    case 't':
+                    case 'v':
+                    case 'w':
+                    case 'x':
+                    case 'y':
+                    case 'z':
+                        consonantCount++;
+                        break;
+                }
+                Console.WriteLine($"Anzahl der Vokale: {vowelCount}");
+                Console.WriteLine($"Anzahl der Konsonanten: {consonantCount}");
 
-
+            }
         }
     }
 }

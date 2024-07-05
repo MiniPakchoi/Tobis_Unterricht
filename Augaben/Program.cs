@@ -77,3 +77,11 @@ Console.WriteLine("Berühmte letzte Worte oder so!");
 string lastWord = "Das wird Legendär!";
 int lastWordChars = StringAufgaben.CountCharsOfLastWordInText(lastWord);
 Console.WriteLine(lastWordChars);
+
+//Aufgabe PrintConsonantsAndVowels
+string testText = "Hirsch heisst ein Mann.";
+int vAndC = StringAufgaben.PrintConsonantAndVowels(testText);
+
+//Aufgabe ContainsDuplicates
+List<int> noDuplicates = new() { 1, 2, 3, 4, 5, 6, 7 };
+List<int> withDuplicates = new() { 0, 2, 2, 3, 4, 5, 5 };
