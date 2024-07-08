@@ -94,49 +94,41 @@ namespace Aufgaben
         /// <param name="text"></param>
         internal static void PrintConsonantAndVowels(string text)
         {
-            int vowelCount = 0;
-            int consonantCount = 0;
-            string textLower = text.ToLower();
-            for (int i = 0; i < textLower.Length; i++)
+            // string lowerText = text.ToLower();
+            int vokalcount = 0, konsonantcount = 0;
+            // Konzept: Prüfe auch Großbuchstaben, ohne diese extra in der Liste an charactern aufzunehmen
+            string vokale = "aeiouäöü";
+            string konsonanten = "bcdfghjklmnpqrstvwxyz";
+            /*
+             int vokalcount = 0;
+             int konsonantcount = 0;
+             */
+            // iteriere durch "text"
+            foreach (var character in text.ToLower())
             {
-                char x = textLower[i];
-                switch (x)
+                foreach (var vokal in vokale)
                 {
-                    case 'a':
-                    case 'e':
-                    case 'i':
-                    case 'o':
-                    case 'u':
-                        vowelCount++;
+                    // prüfe ob vokal -> vokalcount
+                    if (character == vokal)
+                    {
+                        vokalcount++;
                         break;
-                    case 'b':
-                    case 'c':
-                    case 'd':
-                    case 'f':
-                    case 'g':
-                    case 'h':
-                    case 'j':
-                    case 'k':
-                    case 'l':
-                    case 'm':
-                    case 'n':
-                    case 'p':
-                    case 'q':
-                    case 'r':
-                    case 's':
-                    case 't':
-                    case 'v':
-                    case 'w':
-                    case 'x':
-                    case 'y':
-                    case 'z':
-                        consonantCount++;
-                        break;
+                    }
                 }
-                Console.WriteLine($"Anzahl der Vokale: {vowelCount}");
-                Console.WriteLine($"Anzahl der Konsonanten: {consonantCount}");
-
+                foreach (var konsonant in konsonanten)
+                {
+                    // prüfe ob konsonant -> konsonantcount++
+                    if (character == konsonant)
+                    {
+                        konsonantcount++;
+                        break;
+                    }
+                }
             }
+            // gebe vokal- und konsonantencount aus
+            Console.WriteLine($"Dein Text {text} hat folgende Zeichen:");
+            Console.WriteLine($"\tAnzahl Vokale: {vokalcount}");
+            Console.WriteLine($"\tAnzahl Konsonanten: {konsonantcount}");
         }
     }
 }
