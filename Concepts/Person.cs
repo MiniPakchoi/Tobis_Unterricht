@@ -17,10 +17,24 @@
         internal string Vorname = "";
         internal string? Nachname; // Dieser string ist nullable => kann uninitialisiert sein.
 
+        /// <summary>
+        /// Konstruktor für die Klasse.
+        /// Ein Konstruktor erstellt für uns eine Instant (Objekt) von diesem Klasse (Datentyp)
+        /// </summary>
+        public Person(string vorname, string nachname)
+        {
+            // Jetzt wo wir einen Konstruktor haben, müssen unsere Vor- und Nachnamen-Variablen nicht mehr nullable sein.
+            //  => Weil der Konstruktor sicherstellt, dass beim Erstellen einer Person der vorname und nachname als Parameter übergeben werden müssen.
+            Vorname = vorname;
+            Nachname = nachname;
+        }
+
         // Methode => Eine Aktion, welche mein Objekt tätigen kann
         internal void Greet(string greeting)
         {
             Console.WriteLine(Vorname + " " + Nachname + " Begrüßt dich mit: " + greeting);
         }
     }
+
+    
 }
