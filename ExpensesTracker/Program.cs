@@ -18,6 +18,10 @@ do
             Console.WriteLine("In welche Kategorie willst du dieses Expense einordnen?");
             var category = Console.ReadLine();
             var newExpense = new Expense(name, decimalPrice, category);
+            Console.WriteLine("Du hast folgendes Expense erstellt"); 
+            Console.WriteLine($"\tname: {newExpense.Name}");
+            Console.WriteLine($"\tname: {newExpense.Price}");
+            Console.WriteLine($"\tname: {newExpense.Category}");
             break;
         case "2":
             Console.WriteLine("entfernen");
