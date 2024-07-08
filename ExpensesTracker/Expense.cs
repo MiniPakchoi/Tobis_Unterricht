@@ -2,13 +2,13 @@
 {
     internal class Expense
     {
-        //Properties
-        string Name { get; set; } 
-        decimal Price { get; set; }    
-        string Category { get; set; }
-        DateTime CreatedAt { get; set; }
+        // Properties
+        internal string Name { get; set; }
+        internal decimal Price { get; set; }
+        internal string Category { get; set; }
+        internal DateTime CreatedAt { get; set; }
 
-        public Expense (string name, decimal price, string category)
+        public Expense(string name, decimal price, string category)
         {
             Name = name;
             Price = price;
