@@ -42,3 +42,40 @@ dontforgets.Add("Bügeln");
 int myIndex = getIndex("Gebe die Aufgabe ein, die du bearbeiten willst:");
 //int mySecondIndex = getIndex("....einen Text eingeben"); // kann beliebt oft aufgerufen werden
 Console.WriteLine(dontforgets[index]);
+
+var contact = Console.ReadLine();
+
+var contact2 = Console.ReadLine();
+
+var contact3 = Console.ReadLine();
+
+
+List<string> names = new List<string>();
+names.Add("Markus");
+names.Add("Jane");
+names.Add("Silvio");
+
+for (int index = 0; index < 3; index++)
+{
+    string name = names[index];
+    Console.WriteLine(name);
+}
+
+var test = "hello";
+
+foreach (string name in names)
+{
+    Console.WriteLine(name);
+}
+
+foreach (char character in test)
+{
+    Console.WriteLine(character);
+}
+
+int index1 = 0; // Originale Speicheraddresse des Arrays (ohne offset)
+while (index1 < names.Count)
+{
+    Console.WriteLine(names[index1]);
+    index1++;
+}
