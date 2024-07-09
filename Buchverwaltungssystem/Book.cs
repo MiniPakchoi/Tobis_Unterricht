@@ -16,9 +16,9 @@
 
         }
 
-        internal void GetDescription(string description)
+        internal string GetDescription()
         {
-            Console.WriteLine(Title + " " + Author + "veröffentlicht im Jahr: " + Publicationyear + " " + "ISBN:" + Isbn);
+            return Title + " " + Author + "veröffentlicht im Jahr: " + Publicationyear + " " + "ISBN:" + Isbn;
         }
     }
 }

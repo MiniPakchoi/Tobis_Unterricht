@@ -7,5 +7,6 @@ book1.Author = "David Pelzer";
 book1.Publicationyear = 2000;
 book1.Isbn = "9783442150557";
 
-book1.GetDescription("test");
+
+Console.WriteLine(book1.GetDescription());
 
