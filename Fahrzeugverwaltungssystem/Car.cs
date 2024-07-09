@@ -15,26 +15,23 @@
             Mileage = mileage;
         }
 
-        internal void GetDescription(string description)
+        internal string GetDescription()
         {
-            Console.WriteLine(Brand + " " + Model + " " + "Jahr:" + Year + " " + "mit" + " " + Mileage + " " + "km gefahren");
+            return Brand + " " + Model + " " + "Jahr:" + Year + " " + "mit" + " " + Mileage + " " + "km gefahren";
         }
 
-        internal void Drive(int gefahren) 
-        {
-            Console.WriteLine("Wieviel Km bist du gefahren?");
-            int userInput = Convert.ToInt32(Console.ReadLine());
-            int mileage = Mileage;
-            int sumKm = userInput + mileage;
-            Console.WriteLine(sumKm); 
+        internal int Drive(int mileage) 
+        { 
+            int sumKm = Mileage + mileage;
+            return sumKm;
         }
 
-        internal void Age(int old,string text) 
+        internal int Age() 
         {
             int year = Year;
             int actualYear = 2024;
             int alter = actualYear - year;
-            Console.WriteLine("Dein Auto ist"+ " " +alter + " " + "alt");
+            return alter;
         }
     }
 }
