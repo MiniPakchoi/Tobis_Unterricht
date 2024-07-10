@@ -1,6 +1,6 @@
 ﻿namespace Aufgabenverwaltungssystem
 {
-    public class Task
+    public class Tasky
     {
         // Eigenschaften kommen hier hin:
         public string Title { get; set; }
@@ -9,30 +9,30 @@
         public bool IsCompleted { get; set; }
 
         // Konstruktor soll hier implementiert werden:
-        public Task(string title, string description, DateTime dueDate)
+        public Tasky(string title, string description, DateTime dueDate)
         { 
             Title = title;
             Description = description;
             IsCompleted = false;
-            DueDate = DateTime.Now;
+            DueDate = dueDate;
         }
 
         // Beschreibung der Aufgabe
         public string GetTaskInfo()
         {
-            return $"Title: \"{Title}\", Beschreibung: {Description}, Fällig bis: {DueDate}, Erledigt: {IsCompleted}";
+            return $"Title: {Title}, Beschreibung: {Description}, Fällig bis: {DueDate}, Erledigt: {IsCompleted}";
         }
 
         // Markierung der Aufgabe als erledigt
-        public void CompleteTask()
+        public void CompleteTask(bool isCompleted)
         {
-
+            IsCompleted = true;            
         }
 
         // Verlängerung des Fälligkeitsdatums
         public void ExtendDueDate(DateTime newDueDate)
         {
-
+            DueDate = newDueDate;
         }
     }
 }
