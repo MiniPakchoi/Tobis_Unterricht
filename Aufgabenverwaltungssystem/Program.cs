@@ -16,8 +16,8 @@ class Program
 
         // Markiere die erste Aufgabe als erledigt
         Console.WriteLine("\nAb hier sind die erledigten Tasky");
-        bool x = true;
-        task1.CompleteTask(x);
+        
+        task1.CompleteTask();
         Console.WriteLine(task1.GetTaskInfo());
         
 

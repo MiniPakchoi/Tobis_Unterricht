@@ -24,7 +24,7 @@
         }
 
         // Markierung der Aufgabe als erledigt
-        public void CompleteTask(bool isCompleted)
+        public void CompleteTask()
         {
             IsCompleted = true;            
         }
