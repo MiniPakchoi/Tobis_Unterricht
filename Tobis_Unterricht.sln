@@ -53,8 +53,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aufgabenverwaltungssystem",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StaticVSInstance", "StaticVSInstance\StaticVSInstance.csproj", "{63F391B0-DD40-405A-B1DE-661F32DD699B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{0545F3C6-E8E4-4265-A865-D0946531B139}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -161,10 +159,6 @@ Global
 		{63F391B0-DD40-405A-B1DE-661F32DD699B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63F391B0-DD40-405A-B1DE-661F32DD699B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63F391B0-DD40-405A-B1DE-661F32DD699B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0545F3C6-E8E4-4265-A865-D0946531B139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0545F3C6-E8E4-4265-A865-D0946531B139}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0545F3C6-E8E4-4265-A865-D0946531B139}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0545F3C6-E8E4-4265-A865-D0946531B139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

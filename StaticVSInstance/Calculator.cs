@@ -18,7 +18,7 @@
 
         /* Calculate()
         Refactoring -> Umschreiben vom Code zum Verbessern der Performance, Lesbarkeit oder auch Wartbarkeit */
-        public static double Calculate(double numberInput1, double numberInput2,double numberInput3,double numberInputRadius, Operator op)
+        public static double Calculate(double numberInput1, double numberInput2,double numberInput3,double numberInput4, double numberInputRadius, Operator op)
         {
             double result = 0;
             Count++;
@@ -64,6 +64,14 @@
                 case Operator.RectangleCircumference: // 10
                     result = (2 * numberInput1) + (2 * numberInput2);
                     Console.WriteLine($"Das Ergebnis von (2 * {numberInput1}) + (2 * {numberInput2}) = {result}");
+                    break;
+                case Operator.TrapezoidArea: // 11
+                    result = ((numberInput1 + numberInput2) * numberInput3) / 2;
+                    Console.WriteLine($"Das Ergebnis von (({numberInput1} * {numberInput2}) * {numberInput3}) / 2 = {result}");
+                    break;
+                case Operator.TrapezoidCircumference: // 12
+                    result = numberInput1 + numberInput2 + numberInput3 + numberInput4;
+                    Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} +{numberInput3} + {numberInput4} = {result}");
                     break;
             }
             Console.ResetColor();
@@ -148,5 +156,7 @@
         CircleCircumference = 8,
         RectangleArea = 9,
         RectangleCircumference = 10,
+        TrapezoidArea = 11,
+        TrapezoidCircumference = 12,
     }
 }
