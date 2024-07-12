@@ -50,12 +50,12 @@
                     Console.WriteLine($"Das Ergebnis von {numberInput1} + {numberInput2} + {numberInput3} = {result}");
                     break;
                 case Operator.CircleArea: // 7 hier nur 1 zahl verlangen
-                    result = numberInputRadius * 3.14159265359;
-                    Console.WriteLine($"Das Ergebnis von {numberInput1} * 3.14159265359 = {result}");
+                    result = numberInputRadius * numberInputRadius * 3.14159265359;
+                    Console.WriteLine($"Das Ergebnis von {numberInputRadius}² * 3.14159265359  = {result}");
                     break;
                 case Operator.CircleCircumference: // 8 Hier auch nur 1 zahl verlangen
                     result = numberInputRadius * 3.14159265359 * 2;
-                    Console.WriteLine($"Das Ergebnis von 2 * 3.14159265359 * {numberInput1} = {result}");
+                    Console.WriteLine($"Das Ergebnis von 2 * 3.14159265359 * {numberInputRadius} = {result}");
                     break;
                 case Operator.RectangleArea: // 9
                     result = (numberInput1) * (numberInput2);

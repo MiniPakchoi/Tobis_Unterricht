@@ -69,7 +69,7 @@ do
     }
     else if (menuInputIndex == 7 || menuInputIndex == 8)
     {
-        numberInputRadius = Calculator.GetNumberInput("Gebe  den Radius ein: ");
+        numberInputRadius = Calculator.GetNumberInput("Gebe den Radius ein: ");
     }
     else if(menuInputIndex == 11)
     {
